@@ -2,11 +2,11 @@
 // other lines are commands that the computer runs
 
 var r = 255
-var g = 80
+var g = 255
 var b = 0
 
 function setup() {
-  createCanvas(400, 400)
+  createCanvas(300,50)
 
   background(r, g, b)
 }

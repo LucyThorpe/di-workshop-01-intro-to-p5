@@ -3,12 +3,36 @@ function setup() {
   background(0, 0, 0)
 }
 
-function draw() {
-  if (mouseIsPressed) {
-    fill(255, 0, 0)
-  } else {
-    fill(0, 255, 0)
+function draw() { 
+  if (keyIsPressed) {
+    if (key == 'r') {
+      fill(255, 0, 0)
+      stroke(255, 0 , 0)
+    }
+    if (key == 'g') {
+      fill(0, 255, 0)
+      stroke(0, 255 , 0)
+    }
+    if (key == 'b') {
+      fill(0, 0, 255)
+      stroke(0, 0 , 255)
+    }
+    if (key == 'y') {
+      fill(255, 255, 0)
+      stroke(255, 255, 0)
+    }
+    if (key == 'p') {
+      fill(255, 193, 203)
+      stroke(255, 193, 203)
+    }
+    if (key == 'o') {
+      fill(255, 165, 0)
+      stroke(255, 165, 0)
+    }
   }
+  if (mouseIsPressed) {
+    ellipse(mouseX, mouseY, 30, 30)
+  } 
 
-  ellipse(mouseX, mouseY, 30, 30)
+
 }
