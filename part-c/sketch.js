@@ -33,6 +33,8 @@ function draw() {
   if (mouseIsPressed) {
     ellipse(mouseX, mouseY, 30, 30)
   } 
-
-
 }
+//mouseIsPressed means the colour of the shape changes when the mouse is pressed
+// if you change mouseIsPressed to keyIsPressed then the colour will change when a key is pressed.
+// if/else means if a condition is true then it'll do one thing is the condition is false it'll do a different thing
+// {} if you remove this the code wont work
